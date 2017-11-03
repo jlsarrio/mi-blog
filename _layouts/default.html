@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+  {% include head2.html %}
+	
+  <body>
+    <div class="wrapper">
+		
+      {% include header2.html %}
+
+      <section>
+
+
+        <!--
+        {% include botones.html %}
+        -->
+
+
+
+
+
+        <div id="toc"></div>
+ 
+        <div id="content">
+          {{ content }}
+        </div>
+        
+        {% if site.comments %}
+          {% include comments.html %}
+        {% endif %}
+
+      </section>
+
+      {% include footer2.html %}
+		
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+
+    {% include google_analytics.html %}
+
+
+   <!--
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toc').toc({ title: '<i>Contents</i>'});
+      });
+    </script>
+   -->
+
+  </body>
+</html>

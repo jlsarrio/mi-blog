@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/mi-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/mi-blog/" rel="alternate" type="text/html" /><updated>2017-11-03T09:38:52+01:00</updated><id>http://localhost:4000/mi-blog/</id><title type="html">Mi blog de pruebas</title><subtitle>Inicio este blog en pruebas creado con jekyll e incorporando todos los archivos de configuración para ver como se comportan las distintas opciones.</subtitle><entry><title type="html">Presentación</title><link href="http://localhost:4000/mi-blog/presentacion/2017/11/01/Presentaci%C3%B3n.html" rel="alternate" type="text/html" title="Presentación" /><published>2017-11-01T00:00:00+01:00</published><updated>2017-11-01T00:00:00+01:00</updated><id>http://localhost:4000/mi-blog/presentacion/2017/11/01/Presentaci%C3%B3n</id><content type="html" xml:base="http://localhost:4000/mi-blog/presentacion/2017/11/01/Presentaci%C3%B3n.html">&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Bienvenido a mi blog. En él voy a mostrar un sistema de control de casa con el que se puede gestionar desde la conexión/desconexión de la calefacción, hasta un sistema de riego automático para un huerto, en mi caso varios maceteros que he puesto en la terraza. También hay una cámara web que puede tomar fotografías cuando decidas.&lt;/p&gt;
+
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Es posible que no hayáis oído nunca hablar de estas cosas o quizás las conocéis de sobras. En cualquier caso lo que aquí vais a encontrar es parte por parte como se programa y se configura cada una de las partes.&lt;/p&gt;
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Todo el sistema se gestiona desde un mini ordenador (Raspberry PI)&lt;/p&gt;
+&lt;p style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.raspberrypi.org/&quot;&gt;&lt;img src=&quot;/mi-blog/imagenes/Raspberry.jpg&quot; alt=&quot;/imagenes/Raspberry.jpg&quot; title=&quot;Raspberry PI&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;que se encarga tanto de las tareas rutinarias (programación del riego) como de la comunicación con el exterior.&lt;/p&gt;
+
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Los controles de calefacción, bomba de riego, sensores de temperatura interior y exterior, humedad exterior y del macetero, nivel de agua del depósito y demás sistemas de control, se realizan con una placa Arduino.&lt;/p&gt;
+&lt;p style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.arduino.cc/&quot;&gt;&lt;img src=&quot;/mi-blog/imagenes/Arduino.jpg&quot; alt=&quot;/imagenes/Arduino.jpg&quot; title=&quot;Arduino&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;No es necesario tener ninguna pantalla ni botonera (aunque sería muy fácil de configurar)  porque todo el sistema se supervisa desde un teléfono con S.O. Android que puede ver estados de todo el sistema, cambiar la configuración y recibir las imágenes captadas por la página web. Para ello tendremos que conectar la Rasberry PI a internet, bien por el puerto Ethernet o por WIFI.&lt;/p&gt;
+
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Los distintos elementos del sistema se conectan entre sí de manera que cuando se produce un evento, se informa del mismo, p.e. cuando se dispara el temporizador de riego, además de conectar la bomba (o el sistema que se desee), se envía un eMail a la cuenta configurada informando del inicio y fin de riego, nivel de humedad y nivel del depósito de agua.&lt;/p&gt;
+
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Si ya conocéis como funcionan estos aparatos, seguramente os podréis saltar alguno de los pasos que iré explicando,  a pesar de todo espero que os sea útil, si no habéis programado nunca hay algunos archivos que os serán muy útiles, ya que contienen las herramientas necesarias y suficientes para poder comunicar unos módulos con otros.&lt;/p&gt;
+
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Y esto es solo el principio, una vez que hayas seguido las instrucciones que encontrarás en este blog, podrás hacer muchas mas cosas.&lt;/p&gt;
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Espero que te resulte de utilidad todo lo que vas a ver en estas páginas.&lt;/p&gt;
+&lt;p style=&quot;text-indent: 30px; text-align: justify&quot;&gt;Un saludo…&lt;/p&gt;</content><author><name></name></author><summary type="html">Bienvenido a mi blog. En él voy a mostrar un sistema de control de casa con el que se puede gestionar desde la conexión/desconexión de la calefacción, hasta un sistema de riego automático para un huerto, en mi caso varios maceteros que he puesto en la terraza. También hay una cámara web que puede tomar fotografías cuando decidas.</summary></entry><entry><title type="html">Contenido</title><link href="http://localhost:4000/mi-blog/contenido/2017/11/01/Contenido.html" rel="alternate" type="text/html" title="Contenido" /><published>2017-11-01T00:00:00+01:00</published><updated>2017-11-01T00:00:00+01:00</updated><id>http://localhost:4000/mi-blog/contenido/2017/11/01/Contenido</id><content type="html" xml:base="http://localhost:4000/mi-blog/contenido/2017/11/01/Contenido.html">&lt;p&gt;El blog está estructurado por apartados,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Java
+    &lt;ul&gt;
+      &lt;li&gt;Instalación del entrono de programación.&lt;/li&gt;
+      &lt;li&gt;Primeros pasos de programación con Java.&lt;/li&gt;
+      &lt;li&gt;Instalación del sistema de programación para entorno visual.&lt;/li&gt;
+      &lt;li&gt;Varias prácticas de programas.&lt;/li&gt;
+      &lt;li&gt;Envío de mensajes entre módulos mediante Socket.&lt;/li&gt;
+      &lt;li&gt;Creación de un modelo de Socket , diferentes tipos.&lt;/li&gt;
+      &lt;li&gt;Creación de una clase que contiene todo lo necesario para iniciar la comunicación.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Arduino
+    &lt;ul&gt;
+      &lt;li&gt;Descarga e instalación del entorno de programación.&lt;/li&gt;
+      &lt;li&gt;Primeros pasos de programación con Arduino&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java/Arduino
+    &lt;ul&gt;
+      &lt;li&gt;Conexión de una aplicación Java con la tarjeta Arduino&lt;/li&gt;
+      &lt;li&gt;Varios programas de ejemplo&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PHP
+    &lt;ul&gt;
+      &lt;li&gt;Instalación de un servidor WEB&lt;/li&gt;
+      &lt;li&gt;Ejemplos de página web&lt;/li&gt;
+      &lt;li&gt;Varios ejemplos con PHP&lt;/li&gt;
+      &lt;li&gt;Socket con PHP&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Android.
+    &lt;ul&gt;
+      &lt;li&gt;Instalación del Entorno de programación (Android Studio)&lt;/li&gt;
+      &lt;li&gt;Algunos ejemplos de programación para Android&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">El blog está estructurado por apartados,</summary></entry></feed>

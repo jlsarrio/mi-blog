@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+
+  <head>
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mi blog de pruebas by </title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/mi-blog/assets/css/style.css?v=">
+    <script src="/mi-blog/assets/js/wiki-features.js"></script>
+
+    
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+	
+  <body>
+    <div class="wrapper">
+		
+            <header>
+        <a href="/mi-blog/"><img src="">
+          <h1>Mi blog de pruebas</h1>
+        </a>
+        <p>Inicio este blog en pruebas creado con jekyll e incorporando todos los archivos de configuración para ver como se comportan las distintas opciones.</p>
+
+        
+
+        
+
+      
+        
+      </header>
+
+
+      <section>
+
+
+        <!--
+             <div id="tools-buttons" style="width: 100%; text-align: right">
+        _posts/2017-11-01-Presentación.markdown
+        
+          <span class="tools-element"><a target="_blank" href="/edit//presentacion/2017/11/01/Presentaci%C3%B3n.md">Edit</a></span>
+          
+          <span class="tools-element"><a target="_blank" href="/commits//presentacion/2017/11/01/Presentaci%C3%B3n.md">History</a></span>
+          <span class="tools-element"><a target="_blank" href="/blob//presentacion/2017/11/01/Presentaci%C3%B3n.md">Source</a></span>
+        
+
+        
+          <form method="GET" action="/search">
+            
+            <input type="text" name="q" placeholder="Text to search"><input type="submit" value="Search">
+          </form>
+        
+      </div>
+
+
+        -->
+
+
+
+
+
+        <div id="toc"></div>
+ 
+        <div id="content">
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <!--
+  <header class="post-header">
+  -->
+    <h1 class="post-title" itemprop="name headline">Presentación</h1>
+    <p class="post-meta">
+      <time datetime="2017-11-01T00:00:00+01:00" itemprop="datePublished">
+        
+        1 de Nov de 2017
+      </time>
+      </p>
+  <!--
+  </header>
+  -->
+
+  <div class="post-content" itemprop="articleBody">
+    <p style="text-indent: 30px; text-align: justify">Bienvenido a mi blog. En él voy a mostrar un sistema de control de casa con el que se puede gestionar desde la conexión/desconexión de la calefacción, hasta un sistema de riego automático para un huerto, en mi caso varios maceteros que he puesto en la terraza. También hay una cámara web que puede tomar fotografías cuando decidas.</p>
+
+<p style="text-indent: 30px; text-align: justify">Es posible que no hayáis oído nunca hablar de estas cosas o quizás las conocéis de sobras. En cualquier caso lo que aquí vais a encontrar es parte por parte como se programa y se configura cada una de las partes.</p>
+<p style="text-indent: 30px; text-align: justify">Todo el sistema se gestiona desde un mini ordenador (Raspberry PI)</p>
+<p style="text-align: center"><a href="https://www.raspberrypi.org/"><img src="/mi-blog/imagenes/Raspberry.jpg" alt="/imagenes/Raspberry.jpg" title="Raspberry PI" /></a></p>
+
+<p>que se encarga tanto de las tareas rutinarias (programación del riego) como de la comunicación con el exterior.</p>
+
+<p style="text-indent: 30px; text-align: justify">Los controles de calefacción, bomba de riego, sensores de temperatura interior y exterior, humedad exterior y del macetero, nivel de agua del depósito y demás sistemas de control, se realizan con una placa Arduino.</p>
+<p style="text-align: center"><a href="https://www.arduino.cc/"><img src="/mi-blog/imagenes/Arduino.jpg" alt="/imagenes/Arduino.jpg" title="Arduino" /></a></p>
+
+<p style="text-indent: 30px; text-align: justify">No es necesario tener ninguna pantalla ni botonera (aunque sería muy fácil de configurar)  porque todo el sistema se supervisa desde un teléfono con S.O. Android que puede ver estados de todo el sistema, cambiar la configuración y recibir las imágenes captadas por la página web. Para ello tendremos que conectar la Rasberry PI a internet, bien por el puerto Ethernet o por WIFI.</p>
+
+<p style="text-indent: 30px; text-align: justify">Los distintos elementos del sistema se conectan entre sí de manera que cuando se produce un evento, se informa del mismo, p.e. cuando se dispara el temporizador de riego, además de conectar la bomba (o el sistema que se desee), se envía un eMail a la cuenta configurada informando del inicio y fin de riego, nivel de humedad y nivel del depósito de agua.</p>
+
+<p style="text-indent: 30px; text-align: justify">Si ya conocéis como funcionan estos aparatos, seguramente os podréis saltar alguno de los pasos que iré explicando,  a pesar de todo espero que os sea útil, si no habéis programado nunca hay algunos archivos que os serán muy útiles, ya que contienen las herramientas necesarias y suficientes para poder comunicar unos módulos con otros.</p>
+
+<p style="text-indent: 30px; text-align: justify">Y esto es solo el principio, una vez que hayas seguido las instrucciones que encontrarás en este blog, podrás hacer muchas mas cosas.</p>
+<p style="text-indent: 30px; text-align: justify">Espero que te resulte de utilidad todo lo que vas a ver en estas páginas.</p>
+<p style="text-indent: 30px; text-align: justify">Un saludo…</p>
+
+  </div>
+
+  
+</article>
+
+        </div>
+        
+        
+
+      </section>
+
+      <footer>
+	
+
+	
+	<p><small>Hosted on GitHub Pages &mdash; Powered by <a href="https://github.com/Drassil/git-wiki">Git-Wiki</a> </p>
+	
+</footer>
+
+		
+    </div>
+    <script src="/mi-blog/assets/js/scale.fix.js"></script>
+
+
+        
+
+
+   <!--
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toc').toc({ title: '<i>Contents</i>'});
+      });
+    </script>
+   -->
+
+  </body>
+</html>
